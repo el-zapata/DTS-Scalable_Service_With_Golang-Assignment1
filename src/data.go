@@ -1,3 +1,9 @@
+/* 
+-- Data setiap siswa disimpan dalam file ini 
+-- Data berupa struct dan disimpan dalam slice (Students)
+*/
+
+
 package src
 
 var Students = []Student{
