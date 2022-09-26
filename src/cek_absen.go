@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Fungsi Cek_absen mengambil input parameter pointer dan nilai return bertipe string
 func Cek_absen(input *int) string {
 	data := "Data siswa tidak ditemukan!!!"
 	outerLoop:
@@ -20,7 +21,9 @@ func Cek_absen(input *int) string {
 								data_student.person.Alamat,
 								data_student.person.Pekerjaan,
 								data_student.Alasan)
-			break outerLoop
+
+			// Akan break dari seluruh for loop sehingga tidak perlu cek data selanjutnya
+			break outerLoop 
 		}
 		}
 	}
